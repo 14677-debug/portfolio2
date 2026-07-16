@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f8f4ff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ส่วนหัว */
+header{
+    background:linear-gradient(135deg,#6a0dad,#8e44ad);
+    color:white;
+    text-align:center;
+    padding:25px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+header h1{
+    margin-bottom:15px;
+    font-size:2.2rem;
+}
+
+/* เมนู */
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    padding:8px 15px;
+    border-radius:20px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:white;
+    color:#6a0dad;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #b57edc;
+    box-shadow:0 8px 20px rgba(106,13,173,.3);
+}
+
+.hero h2{
+    margin-top:20px;
+    font-size:2rem;
+    color:#6a0dad;
+}
+
+.hero h3{
+    color:#8e44ad;
+    margin-bottom:10px;
+}
+
+/* ปุ่ม */
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#8e44ad;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#6a0dad;
+    transform:translateY(-3px);
+}
+
+/* Container */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* รูปโปรไฟล์ */
+.profile{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:0 auto 25px;
+    border:5px solid #b57edc;
+}
+
+/* ตาราง */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table th{
+    background:#6a0dad;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+    background:#f3e8ff;
+}
+
+/* Card */
+.card{
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-left:6px solid #8e44ad;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(106,13,173,.2);
+}
+
+/* Footer */
+footer{
+    margin-top:50px;
+    background:#6a0dad;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+nav a{
+    display:block;
+    margin:10px auto;
+}
+
+.hero img,
+.profile{
+    width:170px;
+    height:170px;
+}
+
+header h1{
+    font-size:1.8rem;
+}
+
+}
