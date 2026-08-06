@@ -1,177 +1,217 @@
-/* ===== รีเซ็ตค่าเริ่มต้น ===== */
+/* ==========================
+   Portfolio Website Theme
+   Blue Theme
+========================== */
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
 }
 
 body{
-    background:#fcf9ff;
-    color:#444;
-    line-height:1.6;
+    background: #eef8ff;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* ===== Header ===== */
+
 header{
-    background:#d8b4f8;
-    color:#4a235a;
-    text-align:center;
-    padding:25px;
-    box-shadow:0 3px 8px rgba(0,0,0,.1);
+    background: linear-gradient(135deg,#4facfe,#00c6fb);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 header h1{
-    margin-bottom:15px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-/* ===== เมนู ===== */
+header p{
+    font-size: 1.1rem;
+}
+
+/* ===== Navigation ===== */
+
 nav{
-    margin-top:10px;
+    background: #2196f3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a{
-    color:#4a235a;
-    text-decoration:none;
-    font-weight:bold;
-    margin:0 10px;
-    padding:8px 15px;
-    border-radius:20px;
-    transition:.3s;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover{
-    background:#ffffff;
-    color:#8e44ad;
+    background: #1976d2;
 }
 
-/* ===== Hero ===== */
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
+/* ===== Main Content ===== */
 
-.hero img{
-    width:220px;
-    height:220px;
-    object-fit:cover;
-    border-radius:50%;
-    border:6px solid #e8d5ff;
-    box-shadow:0 5px 15px rgba(180,140,255,.3);
-}
-
-.hero h2{
-    margin-top:20px;
-    color:#8e44ad;
-}
-
-.hero h3{
-    color:#6c3483;
-}
-
-/* ===== ปุ่ม ===== */
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:12px 25px;
-    background:#cfa8ff;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#b57edc;
-    transform:translateY(-3px);
-}
-
-/* ===== เนื้อหา ===== */
-.container{
-    width:90%;
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-/* ===== รูปโปรไฟล์ ===== */
-.profile{
-    width:220px;
-    height:220px;
-    object-fit:cover;
-    border-radius:50%;
-    display:block;
-    margin:auto;
-    margin-bottom:25px;
-    border:5px solid #e8d5ff;
-}
-
-/* ===== ตาราง ===== */
-table{
-    width:100%;
-    border-collapse:collapse;
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 5px 10px rgba(0,0,0,.08);
-}
-
-table th{
-    background:#d8b4f8;
-    color:#4a235a;
-    padding:15px;
-}
-
-table td{
-    padding:15px;
-    border-bottom:1px solid #eee;
-}
-
-table tr:hover{
-    background:#f7efff;
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
 }
 
 /* ===== Card ===== */
+
 .card{
-    background:white;
-    padding:20px;
-    margin:20px 0;
-    border-left:6px solid #d8b4f8;
-    border-radius:10px;
-    box-shadow:0 5px 12px rgba(0,0,0,.08);
-    transition:.3s;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 8px 18px rgba(180,140,255,.2);
+.card h2{
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+/* ===== Profile ===== */
+
+.profile{
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 5px solid #4fc3f7;
+}
+
+/* ===== Table ===== */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th{
+    background: #2196f3;
+    color: white;
+}
+
+table th,
+table td{
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table tr:nth-child(even){
+    background: #f2faff;
+}
+
+/* ===== Portfolio ===== */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.item{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+}
+
+.item img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.item h3{
+    color: #1976d2;
+    padding: 15px;
+}
+
+.item p{
+    padding: 0 15px 20px;
+}
+
+/* ===== Button ===== */
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2196f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #1976d2;
+}
+
+/* ===== Contact ===== */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact a{
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover{
+    color: #0d47a1;
 }
 
 /* ===== Footer ===== */
+
 footer{
-    margin-top:50px;
-    background:#d8b4f8;
-    color:#4a235a;
-    text-align:center;
-    padding:18px;
+    background: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 /* ===== Responsive ===== */
-@media(max-width:768px){
 
-nav a{
-    display:block;
-    margin:10px 0;
-}
+@media (max-width:768px){
 
-.hero img,
-.profile{
-    width:170px;
-    height:170px;
-}
+    nav{
+        flex-direction: column;
+    }
 
-header h1{
-    font-size:28px;
-}
+    nav a{
+        border-bottom:1px solid rgba(255,255,255,.2);
+    }
 
+    header h1{
+        font-size:2rem;
+    }
+
+    .profile{
+        width:140px;
+        height:140px;
+    }
 }
