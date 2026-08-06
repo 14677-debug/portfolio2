@@ -1,3 +1,4 @@
+/* ===== รีเซ็ตค่าเริ่มต้น ===== */
 *{
     margin:0;
     padding:0;
@@ -6,46 +7,45 @@
 }
 
 body{
-    background:#f8f4ff;
-    color:#333;
+    background:#fcf9ff;
+    color:#444;
     line-height:1.6;
 }
 
-/* ส่วนหัว */
+/* ===== Header ===== */
 header{
-    background:linear-gradient(135deg,#6a0dad,#8e44ad);
-    color:white;
+    background:#d8b4f8;
+    color:#4a235a;
     text-align:center;
-    padding:25px 20px;
-    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    padding:25px;
+    box-shadow:0 3px 8px rgba(0,0,0,.1);
 }
 
 header h1{
     margin-bottom:15px;
-    font-size:2.2rem;
 }
 
-/* เมนู */
+/* ===== เมนู ===== */
 nav{
     margin-top:10px;
 }
 
 nav a{
-    color:white;
+    color:#4a235a;
     text-decoration:none;
-    margin:0 12px;
+    font-weight:bold;
+    margin:0 10px;
     padding:8px 15px;
     border-radius:20px;
     transition:.3s;
-    font-weight:bold;
 }
 
 nav a:hover{
-    background:white;
-    color:#6a0dad;
+    background:#ffffff;
+    color:#8e44ad;
 }
 
-/* Hero */
+/* ===== Hero ===== */
 .hero{
     text-align:center;
     padding:60px 20px;
@@ -56,27 +56,25 @@ nav a:hover{
     height:220px;
     object-fit:cover;
     border-radius:50%;
-    border:6px solid #b57edc;
-    box-shadow:0 8px 20px rgba(106,13,173,.3);
+    border:6px solid #e8d5ff;
+    box-shadow:0 5px 15px rgba(180,140,255,.3);
 }
 
 .hero h2{
     margin-top:20px;
-    font-size:2rem;
-    color:#6a0dad;
+    color:#8e44ad;
 }
 
 .hero h3{
-    color:#8e44ad;
-    margin-bottom:10px;
+    color:#6c3483;
 }
 
-/* ปุ่ม */
+/* ===== ปุ่ม ===== */
 .btn{
     display:inline-block;
     margin-top:25px;
-    padding:12px 28px;
-    background:#8e44ad;
+    padding:12px 25px;
+    background:#cfa8ff;
     color:white;
     text-decoration:none;
     border-radius:30px;
@@ -84,41 +82,43 @@ nav a:hover{
 }
 
 .btn:hover{
-    background:#6a0dad;
+    background:#b57edc;
     transform:translateY(-3px);
 }
 
-/* Container */
+/* ===== เนื้อหา ===== */
 .container{
+    width:90%;
     max-width:1000px;
     margin:auto;
     padding:40px 20px;
 }
 
-/* รูปโปรไฟล์ */
+/* ===== รูปโปรไฟล์ ===== */
 .profile{
     width:220px;
     height:220px;
     object-fit:cover;
     border-radius:50%;
     display:block;
-    margin:0 auto 25px;
-    border:5px solid #b57edc;
+    margin:auto;
+    margin-bottom:25px;
+    border:5px solid #e8d5ff;
 }
 
-/* ตาราง */
+/* ===== ตาราง ===== */
 table{
     width:100%;
     border-collapse:collapse;
     background:white;
     border-radius:10px;
     overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    box-shadow:0 5px 10px rgba(0,0,0,.08);
 }
 
 table th{
-    background:#6a0dad;
-    color:white;
+    background:#d8b4f8;
+    color:#4a235a;
     padding:15px;
 }
 
@@ -128,40 +128,40 @@ table td{
 }
 
 table tr:hover{
-    background:#f3e8ff;
+    background:#f7efff;
 }
 
-/* Card */
+/* ===== Card ===== */
 .card{
     background:white;
-    padding:25px;
+    padding:20px;
     margin:20px 0;
-    border-left:6px solid #8e44ad;
+    border-left:6px solid #d8b4f8;
     border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
     transition:.3s;
 }
 
 .card:hover{
     transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(106,13,173,.2);
+    box-shadow:0 8px 18px rgba(180,140,255,.2);
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer{
     margin-top:50px;
-    background:#6a0dad;
-    color:white;
+    background:#d8b4f8;
+    color:#4a235a;
     text-align:center;
-    padding:20px;
+    padding:18px;
 }
 
-/* Responsive */
+/* ===== Responsive ===== */
 @media(max-width:768px){
 
 nav a{
     display:block;
-    margin:10px auto;
+    margin:10px 0;
 }
 
 .hero img,
@@ -171,7 +171,7 @@ nav a{
 }
 
 header h1{
-    font-size:1.8rem;
+    font-size:28px;
 }
 
 }
